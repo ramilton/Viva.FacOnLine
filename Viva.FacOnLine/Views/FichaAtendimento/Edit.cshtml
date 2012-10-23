@@ -1,0 +1,156 @@
+﻿@model Viva.FacOnLine.Models.FichaAtendimentoModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>FichaAtendimentoModel</legend>
+
+        @Html.HiddenFor(model => model.NumeroFicha)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NomeCorretor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NomeCorretor)
+            @Html.ValidationMessageFor(model => model.NomeCorretor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Data)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Data)
+            @Html.ValidationMessageFor(model => model.Data)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NomeCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NomeCliente)
+            @Html.ValidationMessageFor(model => model.NomeCliente)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EmailCliente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EmailCliente)
+            @Html.ValidationMessageFor(model => model.EmailCliente)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TelRes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TelRes)
+            @Html.ValidationMessageFor(model => model.TelRes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TelCom)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TelCom)
+            @Html.ValidationMessageFor(model => model.TelCom)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Celular)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Celular)
+            @Html.ValidationMessageFor(model => model.Celular)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Imovel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Imovel)
+            @Html.ValidationMessageFor(model => model.Imovel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Endereco)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Endereco)
+            @Html.ValidationMessageFor(model => model.Endereco)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Bairro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Bairro)
+            @Html.ValidationMessageFor(model => model.Bairro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cidade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cidade)
+            @Html.ValidationMessageFor(model => model.Cidade)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FonteInformacao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FonteInformacao)
+            @Html.ValidationMessageFor(model => model.FonteInformacao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Contato)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Contato)
+            @Html.ValidationMessageFor(model => model.Contato)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Agendamento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Agendamento)
+            @Html.ValidationMessageFor(model => model.Agendamento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AgendamentoData)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AgendamentoData)
+            @Html.ValidationMessageFor(model => model.AgendamentoData)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AgendamentoHora)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AgendamentoHora)
+            @Html.ValidationMessageFor(model => model.AgendamentoHora)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

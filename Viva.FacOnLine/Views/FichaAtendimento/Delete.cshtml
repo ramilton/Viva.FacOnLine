@@ -1,0 +1,130 @@
+﻿@model Viva.FacOnLine.Models.FichaAtendimentoModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>FichaAtendimentoModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NomeCorretor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NomeCorretor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Data)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NomeCliente)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NomeCliente)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EmailCliente)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EmailCliente)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TelRes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TelRes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TelCom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TelCom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Celular)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Celular)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Imovel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Imovel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Endereco)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Endereco)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Bairro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Bairro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cidade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cidade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FonteInformacao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FonteInformacao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Contato)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Contato)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Agendamento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Agendamento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgendamentoData)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgendamentoData)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgendamentoHora)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgendamentoHora)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

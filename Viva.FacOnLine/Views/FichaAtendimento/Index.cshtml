@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Viva.FacOnLine.Models.FichaAtendimentoModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCorretor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelRes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelCom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imovel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FonteInformacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Agendamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgendamentoData)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgendamentoHora)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeCorretor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelRes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelCom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imovel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Endereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bairro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FonteInformacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agendamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgendamentoData)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgendamentoHora)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NumeroFicha }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NumeroFicha }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NumeroFicha })
+        </td>
+    </tr>
+}
+
+</table>
